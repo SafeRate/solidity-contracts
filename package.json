@@ -1,5 +1,5 @@
 {
-  "name": "hedera_foundry",
+  "name": "saferate-solidity-contracts",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,10 +10,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "typescript": "^4.8.4"
+    "typescript": "^5.0.4"
   },
   "dependencies": {
-    "@hashgraph/sdk": "^2.18.5",
+    "@hashgraph/sdk": "^2.24.2",
     "dotenv": "^16.0.3"
   }
 }

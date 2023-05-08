@@ -23,9 +23,7 @@ const client = Client.forTestnet().setOperator(
 client.setDefaultMaxTransactionFee(new Hbar(100));
 
 // read the bytecode
-const bytecode = fs.readFileSync(
-  "binaries/contracts_TodoList_sol_TodoList.bin"
-);
+const bytecode = fs.readFileSync("binaries/MortgageLoan_sol_MortgageLoan.bin");
 
 console.log(bytecode);
 

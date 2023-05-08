@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.13;
 
-import "openzeppelin-contracts/token/ERC20/ERC20.sol";
-import "openzeppelin-contracts/utils/math/SafeMath.sol";
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 import "./hts-precompile/HederaTokenService.sol";
 import "./hts-precompile/HederaResponseCodes.sol";
 

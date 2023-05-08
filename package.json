@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "start": "npx solc --bin contracts/*.sol -o binaries; npm run build; node ./dist/index.js"
+    "start": "npx solc --bin contracts/MortgageLoan.sol -o binaries --include-path node_modules/ --base-path .; npm run build; node ./dist/index.js"
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "@hashgraph/sdk": "^2.24.2",
+    "@openzeppelin/contracts": "^4.8.3",
     "dotenv": "^16.0.3"
   }
 }

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.13;
 
-import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import "openzeppelin-contracts/token/ERC20/ERC20.sol";
 import "./hts-precompile/HederaTokenService.sol";
 import "./hts-precompile/HederaResponseCodes.sol";
 
@@ -33,7 +33,7 @@ contract MortgageLoan is HederaTokenService {
     }
 
     function getOutstandingPrincipalBalance() public view returns (uint256) {
-        return this.getBalanceOf(this._oPrincipalTokenAddress);
+        return this.getBalanceOf(_oPrincipalTokenAddress);
     }
     
     function tokenAssociate(address sender, address tokenAddress) external {

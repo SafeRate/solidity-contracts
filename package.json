@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "start": "npx solc --bin contracts/MortgageLoan.sol -o binaries --include-path node_modules/ --base-path .; npm run build; node ./dist/index.js"
+    "start": "npx solc --bin contracts/*.sol -o binaries --include-path node_modules/ --base-path .; npm run build; node ./dist/index.js"
   },
   "author": "",
   "license": "ISC",

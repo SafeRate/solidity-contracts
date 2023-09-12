@@ -9,25 +9,11 @@ import "./hts-precompile/HederaResponseCodes.sol";
 contract MortgageLoan is HederaTokenService {
 
     address private _collateralAddress;
+    address private _impactAddress;
+    address private _loanReviewAddress;
+    address private _servicerAddress;
 
-    address private _oEscrowTokenAddress;
-    address private _oFeeTokenAddress;    
-    address private _oInterestTokenAddress;    
-    address private _oPrincipalTokenAddress;
-    address private _oPrincipalNiTokenAddress;
-
-    address private _pEscrowTokenAddress;
-    address private _pFeeTokenAddress;
-    address private _pInterestTokenAddress;
-    address private _pPrepayTokenAddress;    
-    address private _pPrincipalTokenAddress;
-    address private _pPrincipalNiTokenAddress;
-
-    address private _lEscrowTokenAddress;
-    address private _lFeeTokenAddress;
-    address private _lInterestTokenAddress;
-    address private _lPrincipalTokenAddress;
-    address private _lPrincipalNiTokenAddress;
+    address private _
 
     function getBalanceOf(address tokenAddress) public view returns (uint256) {
         return IERC20(tokenAddress).balanceOf(address(this));

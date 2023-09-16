@@ -12,6 +12,9 @@ if (accountIdString === undefined || privateKeyString === undefined) {
   throw new Error("account id and private key in env file are empty");
 }
 
+console.log(accountIdString);
+console.log(privateKeyString);
+
 const operatorAccountId = AccountId.fromString(accountIdString);
 const address = operatorAccountId.toSolidityAddress();
 const operatorPrivateKey = PrivateKey.fromString(privateKeyString);
@@ -23,7 +26,7 @@ const client = Client.forTestnet().setOperator(
 client.setDefaultMaxTransactionFee(new Hbar(100));
 
 // read the bytecode
-const bytecode = fs.readFileSync("binaries/MortgageLoan_sol_MortgageLoan.bin");
+const bytecode = fs.readFileSync("binaries/contracts_Mortgage_sol_Mortgage.bin");
 
 console.log(bytecode);
 
